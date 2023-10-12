@@ -1,0 +1,219 @@
+a{
+    color: #404040;
+}
+.header-wrap{
+    background-color: white;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header-wrap a{
+    color: #404040;
+}
+.logo img{
+    background-color: #404040;
+    padding:0 10px;
+}
+.form-hotel{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.form-hotel h2{
+    padding-left: 20px;
+}
+.form-hotel-row{ 
+    border: none;
+    padding: 0px 0px;
+    background-color: white;
+}
+.input-tujuan{
+    margin-top: 10px;
+}
+.input-tujuan input{
+    border: none;
+    font-family: tir;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.input-tujuan input[type="date"]{
+    width: 40%;
+}
+.input-tujuan i{
+    margin-right: 10px;
+    color: #1abc9c;
+}
+.hotel-input{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0px;
+    padding-left: 25px;
+}
+.form-hotel-row button{
+    background-color: #F5B041;
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    font-family: tibold;
+    cursor: pointer;
+}
+.form-hotel-wrap{
+    padding: 50px 0;
+    background-color: #1abc9c;
+}
+/* sidebar */
+.cari-bar-wrap{
+    padding: 50px 0;
+    background-color:#f2f2f2;
+}
+.cari-sidebar{
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.side-mg{
+    margin-bottom: 0px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.side-mg h4{
+    margin-top: 0;
+}
+.price-box input{
+    width: 30%;
+}
+.price-box input[type="range"]{
+    width: 100%;
+    margin-top: 30px;
+}
+.rate-box i{
+    color: gold;
+}
+/* main bar */
+.main-bar{
+    padding-left: 50px;
+}
+.main-box{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    cursor: pointer;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.main-box:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.main-img img{
+    background-size: cover;
+    width: 100%;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    height: 35vh;
+    object-fit: cover;
+}
+.main-img img:hover{
+    transform: scale(1.1);
+}
+.main-text{
+    padding-left: 30px;
+}
+.main-text p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.main-text h3{
+    margin: 5px 0;
+}
+.main-img{
+    overflow: hidden;
+    height: auto;
+}
+.main-box i{
+    color: #1abc9c;
+}
+.harga{
+    color: orange;
+    font-size: 20px;
+    font-family: tibold;
+}
+/* lanjut */
+.lanjut{
+    text-align: right;
+}
+.lanjut span{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-family: tibold;
+    cursor: pointer;
+}
+.lanjut .lanjut-active{
+    background-color: #1abc9c;
+    color: white;
+}
+.lanjut i{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* custom sidebar */
+.isi-sidebar input[type="checkbox"]{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+.isi-sidebar .custom-check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid #1abc9c;
+}
+.check-box{
+    position: relative;
+    margin-bottom: 10px;
+}
+.check-box label{
+    position: relative;
+    bottom: 5px;
+    left: 25px;
+}
+.isi-sidebar input:checked ~ .custom-check{
+    background-color: white;
+    border-radius: 5px;
+    transform: rotate() scale(1);
+    opacity: 1;
+    border: 2px solid #1abc9c;
+}
+.isi-sidebar input:checked ~ .custom-check i{
+    opacity: 1;
+}
+.isi-sidebar .check{
+    color: #1abc9c;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    font-size: 12px;
+    opacity: 0;
+}
+/* price-box */
+.price-box input{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding-left: 5px;
+
+
+}

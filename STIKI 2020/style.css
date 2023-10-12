@@ -1,0 +1,615 @@
+/* global */
+html,body{
+    font-family: tir;
+    padding: 0;
+    margin: 0;
+    color: #404040;
+    scroll-behavior: smooth;
+}
+.garis{
+    text-align: center;
+}
+.garis img{
+    width: 100%;
+    fill: #1abc9c;
+    color: #1abc9c;
+}
+
+.plane{
+    width: 10% !important;
+    transform: rotate(100deg);
+}
+input{
+    font-family: tir;
+}
+@font-face{
+    font-family: tib;
+  src: url('font/TitilliumWeb-Black.ttf');
+}
+@font-face{
+    font-family: tibold;
+  src: url('font/TitilliumWeb-Bold.ttf');
+}
+@font-face{
+    font-family: til;
+  src: url('font/TitilliumWeb-Light.ttf');
+}
+@font-face{
+    font-family: tir;
+  src: url('font/TitilliumWeb-Regular.ttf');
+}
+@font-face{
+    font-family: tis;
+  src: url('font/TitilliumWeb-SemiBold.ttf');
+}
+.pd-el{
+    padding: 50px 0;
+}
+/* col responsive grid */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+.container-fluid{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+}
+.header-wrap{
+    position: fixed;
+    z-index: 99;
+    min-height: 80px;
+}
+.header-fixed{
+    height: 80px;
+    background-color: #ffffff;
+    z-index: 999;
+    position: fixed;
+    transition: 300ms;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.header{
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+.nav{
+    text-align: right;
+    font-family: tis;
+}
+.nav a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 300ms;
+}
+.nav a:hover{
+    font-size: 15px;
+}
+.nav button{
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 30px;
+    font-family: tis;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+.mobile-menu button{
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 30px;
+    font-family: tis;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+.nav button:hover{
+    background-color: #F5B041;
+}
+/* banner */
+.banner-wrap{
+    height: 100vh;
+    overflow: hidden;
+}
+.main-carousel{
+    height: 100vh;
+}
+.carousel-cell img{
+    width: 100%;
+    background-size: cover;
+    filter: brightness(0.8);
+    object-fit: cover;
+    height: 100vh;
+}
+.carousel-cell{
+    width: 100%;
+} 
+.clearfix{
+    overflow: hidden;
+}
+.banner-text{
+    position: absolute;
+    top: -5%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.banner-text h1{
+    color: white;
+    font-size: 3vw;
+    text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
+}
+.banner-cap{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+.banner-text button{
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 30px;
+    font-family: tis;
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    margin-top: 50px;
+}
+.banner-text button:hover{
+    filter: brightness(0.9);
+}
+/* form input */
+.form-input{
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    padding: 50px 70px;
+    z-index: 90;
+    position: relative;
+    overflow: auto;
+    box-sizing: border-box;
+    top: -80px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #F5B041;
+    border-bottom: 3px solid #1abc9c;
+
+}
+.plane img{
+    width: 5%;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0;
+}
+.form-hotel h2{
+    padding-left: 20px;
+}
+.form-hotel-row{ 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px 0px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.input-tujuan{
+    margin-top: 10px;
+}
+.input-tujuan input{
+    border: none;
+    font-family: tir;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.input-tujuan input[type="date"]{
+    width: 40%;
+}
+.input-tujuan i{
+    margin-right: 10px;
+    color: #1abc9c;
+}
+.hotel-input{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0px;
+    padding-left: 25px;
+}
+.form-hotel-row button{
+    background-color: #1abc9c;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    width: 100%;    
+    height: 100px;
+    font-size: 20px;
+    font-family: tibold;
+    cursor: pointer;
+}
+/* desti */
+.desti-terbaik{
+    padding: 50px 0;
+}
+.desti-img img{
+    background-size: cover;
+    max-width: 100%;
+    object-fit: cover;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    height: 40vh;
+}
+.desti-img img:hover{
+    transform: scale(1.1);
+}
+.desti-img{
+    overflow: hidden;
+    height: 40vh;
+}
+.desti-text{
+    background-color: #F5B041;
+    padding: 0px 30px;
+    padding-left: 15px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    border-radius: 0px 50px 50px 0;
+}
+.desti button{
+    background-color: #1abc9c;
+}
+.desti-text p{
+    margin: 10px 10px;
+}
+.desti-col{
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+/* populer */
+.populer-wrap{
+    padding: 50px 0;
+}
+.popu img{
+    background-size: cover;
+    width: 100%;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+.popu img:hover{
+    transform: scale(1.1);
+}
+.popu-box{
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.popu-text{
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+.popu-img{
+    height: 30vh;
+    overflow: hidden;
+}
+.popu p{
+    margin-top: 0;
+}
+.popu h4 {
+    margin-bottom: 0px;
+}
+.center{
+    text-align: center;
+}
+.populer button,.top-btn{
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.popu button{
+    color: #1abc9c;
+    background-color: white;
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: 1px solid #1abc9c;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 300ms;
+}
+.popu button:hover{
+    background-color: #1abc9c;
+    color: white;
+}
+.popu{
+    padding: 0 5px;
+    margin-top: 10px;
+}
+.popu i{
+    color: #1abc9c;
+}
+.popu p{
+    font-size: 14px;
+}
+/* Kelebihan */
+.lebih-col i{
+    color: #1abc9c;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.lebih-col p{
+    margin-top: 0px;
+}
+.lebih-col h4{
+    margin-bottom: 10px;
+}
+.lebih-col{
+    padding: 0 10px;
+    
+}
+.lebih{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 50px;
+}
+.lebih-row{
+    padding: 50px 0;
+    text-align: center;
+}
+/* Langganan */
+.langgan-wrap{
+    background-color: #ECFEFF;
+    height: 70vh;
+}
+.langgan-col img{
+    background-size: cover;
+    max-width: 90%;
+}
+.form-email{
+    margin-top: 150px;
+}
+.form-email input{
+    padding: 16px 50px 16px 20px;
+    border-radius: 100px 0px 0px 100px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.form-email button{
+    background-color: #1abc9c;
+    padding: 14.5px 40px;
+    border: none;
+    border-radius: 0px 100px 100px 0;
+    font-family: tis;
+    color: white;
+    font-size: 15px;
+}
+.form-email h2 span{
+    color: #F5B041;
+    font-size: 30px;
+}
+.form-email h2{
+    font-family: tibold;
+}
+/* footer */
+.footer-wrap{
+    background-color: #4F4F4F;
+}
+.footer{
+    padding: 50px 0;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+}
+.footer-col a{
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+}
+.footer i{
+    margin-right: 10px;
+}
+/* copy */
+.copy-wrap{
+    background-color: #3D3D3D;
+    text-align: center;
+    padding: 20px 0;
+}
+.copy{
+    color: white;
+}
+/* responsive */
+@media only screen and (min-width: 1920px) {
+    .form-input{
+        top: -80px;
+    }
+    .banner-wrap{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .form-input{
+        top: -60px;
+    }
+    .banner-wrap{
+        overflow: hidden;
+        height: 80vh;
+    }
+    .banner-wrap img{
+        object-fit: cover;
+        height: 80vh;
+    }
+    .form-input .col-3,.form-input .col-5,.form-input .col-1{
+        width: 100%;
+    }
+    .hotel-input{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .input-tujuan input[type="date"]{
+        border-right: rgba(0, 0, 0, 0.1);
+    }
+    .col-4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .desti-img{
+        height: auto;
+    }
+    .langgan-wrap .col-6{
+        width: 100%;
+    }
+    .langgan-wrap{
+        height: auto;
+        padding: 50px 0;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    .langgan-wrap img{
+        max-width: 60%;
+    }
+    .form-email{
+        margin: 0;
+    }
+    .langgan-col h2{
+        margin-bottom: 50px;
+    }
+    .popu-img{
+        height: auto;
+    }
+    .desti-col{
+        padding: 0;
+    }
+    .desti-terbaik img{
+        height: auto;
+    }
+
+}
+@media only screen and (max-width: 560px){
+    .form-input{
+        top: -60px;
+        padding: 20px;
+    }
+    .banner-wrap{
+        overflow: hidden;
+        height: 400px;
+    }
+    .banner-wrap img{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .form-input .col-3,.form-input .col-5,.form-input .col-1{
+        width: 100%;
+    }
+    .hotel-input{
+        padding: 10px 10px 10px 20px;
+    }
+    .form-hotel-row button{
+        height: auto;
+    }
+    .footer .col-3{
+        width: 100%;
+    }
+    .form-input h2{
+        font-size: 20px;
+        padding: 0;
+    }
+    .desti-terbaik{
+        padding-top: 0;
+    }
+    .desti-terbaik img{
+        height: auto;
+    }
+    .langgan-col input,.langgan-col button{
+        border-radius: 100px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    .nav a{
+        display: none;
+    }
+    .nav i{
+        color: white;
+    }
+    .btn-menu{
+        display: inline !important;
+    }
+    .banner-cap{
+        position: absolute;
+        left: 10%;
+        top: 40%;
+    }
+}
+/* mobile-menu */
+.mobile-menu{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    height: 100%;
+    width: 60%;
+    right: -100%;
+    transition: 600ms ease-in-out;
+}
+.mobile-menu ul{
+    list-style: none;
+    margin: 0;
+}
+.mobile-menu ul li{
+    padding: 15px 0;
+}
+.mobile-menu ul li a{
+    text-decoration: none;
+    color: #222222;
+    transition: 300ms;
+}
+.mobile-menu ul li a:hover{
+    padding-left: 20px;
+}
+.mobile-menu.active{
+    right: 0;
+}
+.btn-close{
+    float: none;
+    text-align: right;
+    padding: 25px;
+    padding-right: 30px;
+}
+.btn-menu{
+    display: none;
+}

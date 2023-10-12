@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plugin/Icon/fontawesome-5.2.0/css/all.css">
+    <link rel="stylesheet" href="plugin/Sliders/flickity/flickity.css">
+    <link rel="stylesheet" href="plugin/Carting ( Rating & Filter)/star-rating-svg/src/css/star-rating-svg.css">
+    <link rel="stylesheet" href="hotel.css">
+    <title>Travelsia|Hotel</title>
+</head>
+<body>
+    <div class="container-fluid header-wrap clearfix">
+        <div class="container">
+            <div class="header col-12">
+                <div class="logo col-6">
+                    <div><img src="gambar/logo.png" alt="Travelsia"></div>
+                </div>
+                <nav class="col-6 nav">
+                    <a href="index.html">Beranda</a>
+                    <a href="">Hotel</a>
+                    <a href="">Cek Booking</a>
+                    <a href="">
+                        <button type="submit">Masuk</button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluuid form-hotel-wrap clearfix">
+        <div class="container">
+            <div class="form-hotel col-12">
+                <div class="form-hotel-row col-12">
+                    <div class="col-3">
+                        <div class="hotel-input">
+                            <label for="">Tujuan</label>
+                            <div class="input-tujuan">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input name="tujuan" type="text" placeholder="Mau Kemana?">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="hotel-input">
+                            <label for="">Check-in & Check-out</label>
+                            <div class="input-tujuan">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <input name="in" type="date"">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <input name="out" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="hotel-input">
+                            <label for="">Kamar & Tamu</label>
+                            <div class="input-tujuan">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input name="kamartamu" type="text" placeholder="Kamar & Tamu">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                            <button type="submit">Cari</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cari-bar-wrap clearfix">
+        <div class="container">
+            <div class="cari-bar col-12">
+                <div class="cari-sidebar col-3">
+                    <div class="col-12 pilihan-box side-mg">
+                        <div class="judul-sidebar ">
+                            <h4>Populer</h4>
+                        </div>
+                        <div class="isi-sidebar">
+                            <div class="check-box">
+                                <input type="checkbox" name="populer" value="populer">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="populer"> Populer</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="termurah" value="termurah">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="termurah"> Termurah</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="termahal" value="termahal" checked>
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="termahal"> Termahal</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="terlaris" value="terlaris">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="terlaris"> Terlaris</label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 price-box side-mg">
+                        <div class="judul-sidebar">
+                            <h4>Harga</h4>
+                        </div>
+                        <div class="isi-sidebar">
+                                <label for="">Min</label>
+                                <input type="text" placeholder="0">
+                                <label for="">Max</label>
+                                <input type="text" placeholder="15.000.000">
+                                <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 rate-box side-mg">
+                        <div class="judul-sidebar ">
+                            <h4>Star Rating</h4>
+                        </div>
+                        <div class="isi-sidebar">
+                            <div class="check-box">
+                                <input type="checkbox" name="rate" value="rate">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="rate">
+                                    <i class="fas fa-star"></i>
+                                </label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="rate" value="rate">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="rate" value="rate">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="rate" value="rate">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="rate" value="rate">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </label><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 fasilitas-sidebar side-mg">
+                        <div class="judul-sidebar ">
+                            <h4>Fasilitas</h4>
+                        </div>
+                        <div class="isi-sidebar">
+                            <div class="check-box">
+                                <input type="checkbox" name="populer" value="populer">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="populer"> AC</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="termurah" value="termurah">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="termurah">WiFi</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="termahal" value="termahal" checked>
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="termahal">Parkir</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="terlaris" value="terlaris">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="terlaris">Elevator</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="terlaris" value="terlaris">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="terlaris">Gym</label><br>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="terlaris" value="terlaris">
+                                <span class="custom-check"><i class="fas fa-check check"></i></span>
+                                <label for="terlaris">Kolam Renang</label><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="main-bar">
+                        <a href="detail.html">
+                            <div class="main-box col-12">
+                                <div class="main-img col-4">
+                                    <img src="gambar/h1.jpg" alt="">
+                                </div>
+                                <div class="main-text col-8">
+                                    <div class="col-12">
+                                        <h3>The Apurva Kempinski Bali</h3>
+                                        <p><i class="fas fa-map-marker-alt"></i>&nbsp;Nusa Dua, Badung</p>
+                                        <div class="my-rating"></div>
+                                        <p class="harga">Rp. 470.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="detail.html">
+                            <div class="main-box col-12">
+                                <div class="main-img col-4">
+                                    <img src="gambar/h2.jpg" alt="">
+                                </div>
+                                <div class="main-text col-8">
+                                    <div class="col-12">
+                                        <h3>Golden Tulip Jineng Resort Bali</h3>
+                                        <p><i class="fas fa-map-marker-alt"></i>&nbsp;Kuta, Badung</p>
+                                        <div class="my-rating"></div>
+                                        <p class="harga">Rp. 470.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="detail.html">
+                            <div class="main-box col-12">
+                                <div class="main-img col-4">
+                                    <img src="gambar/h3.jpg" alt="">
+                                </div>
+                                <div class="main-text col-8">
+                                    <div class="col-12">
+                                        <h3>H Sovereign Bali</h3>
+                                        <p><i class="fas fa-map-marker-alt"></i>&nbsp;Kuta, Badung</p>
+                                        <div class="my-rating"></div>
+                                        <p class="harga">Rp. 470.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="detail.html">
+                            <div class="main-box col-12">
+                                <div class="main-img col-4">
+                                    <img src="gambar/h4.jpg" alt="">
+                                </div>
+                                <div class="main-text col-8">
+                                    <div class="col-12">
+                                        <h3>The Sakala Resort Bali - All Suites</h3>
+                                        <p><i class="fas fa-map-marker-alt"></i>&nbsp;Nusa Dua, Badung</p>
+                                        <div class="my-rating"></div>
+                                        <h3 class="harga">Rp. 470.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="lanjut col-12">
+                            <p>
+                                <i class="fas fa-arrow-left"></i>
+                                <span class="lanjut-active">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid footer-wrap clearfix">
+            <div class="container clearfix">
+                <div class="footer col-12 clearfix">
+                    <div class="col-3">
+                        <div class="footer-col">
+                            <a href="">
+                                <img src="gambar/logo.png" alt="">
+                            </a>
+                            <a href="">087-861-777-251</a>
+                            <a href="">Travelsia@gmail.com</a>
+                            <a href="">Jl. Raya Tegal Jaya, Dalung, Bali.</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-col">
+                            <a href="">
+                                <h4>Tentang Kami</h4>
+                            </a>
+                            <a href="">FAQ</a>
+                            <a href="">Syarat & Ketentuan</a>
+                            <a href="">Kebijakan Privasi</a>
+                            <a href="">Patner Kami</a>
+                            <a href="">Pusat Bantuan</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-col">
+                            <a href="">
+                                <h4>Ikuti Kami</h4>
+                            </a>
+                            <a href=""><i class="fab fa-google"></i>Google</a>
+                            <a href=""><i class="fab fa-facebook"></i>Facebook</a>
+                            <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-col">
+                            <a href="">
+                                <h4>Destinasi Terpopuler</h4>
+                            </a>
+                            <a href="">Bali</a>
+                            <a href="">Yogyakarta</a>
+                            <a href="">Jakarta</a>
+                            <a href="">Lombok</a>
+                            <a href="">Jayapura</a>
+                            <a href="">Jawa Barat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copy-wrap clearfix">
+            <div class="copy col-12 clearfix">&copy;CopyRight.Yusa&Riky.2020</div>
+        </div>
+</body>
+<script src="plugin/jquery-3.3.1/jquery-3.3.1.js"></script>
+<script src="plugin/Sliders/flickity/flickity.pkgd.js"></script>
+<script src="plugin/Carting ( Rating & Filter)/star-rating-svg/src/jquery.star-rating-svg.js"></script>
+<script>
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  prevNextButtons: false,
+pageDots: false,
+autoPlay: true,
+
+});
+$(".my-rating").starRating({
+  initialRating: 4,
+  strokeColor: '#894A00',
+  strokeWidth: 5,
+  starSize: 15,
+  useGradient: false
+});
+</script>
+</html>
+<!-- <div class="input-hotel col-6 clearfix">
+                        <div class="input-judul">
+                            <h2>Booking tempat unik dan murah.</h2>
+                        </div>
+                            <div class="row-input col-12">
+                                <div class="input-text col-6">
+                                    <input type="text" placeholder="Kemana anda ingin pergi ?" >
+                                </div>
+                                <div class="input-right col-6">
+                                    <input type="text" placeholder="Tamu & Kamar" >
+                                </div>
+                            </div>
+                            <div class="row-input col-12">
+                                <div class="input-text col-6 ">
+                                    <input type="text" placeholder="Check-in" >
+                                </div>
+                                <div class="input-right col-6">
+                                    <input type="text" placeholder="Check-out" >
+                                </div>
+                            </div>
+                            <div class="button-input col-12">
+                                <button class="submit col-12">Booking Sekarang</button>
+                            </div>
+                    </div> -->
